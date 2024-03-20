@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.productdetail.ProductDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="325dp"
+                android:layout_marginStart="-17dp"
+                android:gravity="center_vertical"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cViewMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    app:cardCornerRadius="7dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="325dp" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/main_margin"
+            android:layout_marginStart="@dimen/main_margin"
+            android:layout_marginTop="@dimen/main_margin"
+            android:elevation="6dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/text_small_heading"
+            android:text="@string/back"
+            app:chipIcon="@drawable/arrow_back"
+            app:chipIconTint="@color/primary_color"
+            app:chipStrokeWidth="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+<!--        <com.google.android.material.chip.Chip-->
+<!--            android:id="@+id/btnAddtoCart"-->
+<!--            android:clickable="false"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?actionBarSize"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_margin="@dimen/main_margin"-->
+<!--            android:elevation="6dp"-->
+<!--            android:fontFamily="@font/poppins_regular"-->
+<!--            android:padding="@dimen/main_margin"-->
+<!--            android:text="@string/addtocart"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/text_small_heading"-->
+<!--            app:chipBackgroundColor="@color/cta_color"-->
+<!--            app:chipStrokeWidth="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent" />-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="525dp"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/pLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical"
+                android:padding="@dimen/main_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <TextView
+                    android:id="@+id/product_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:maxLines="1"
+                    android:text="@string/lorem_ipsum_short"
+                    android:textColor="@color/primary_color"
+                    android:textSize="@dimen/text_medium_heading" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/product_price_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/lorem_ipsum_short"
+                        android:textColor="@color/cta_color"
+                        android:textSize="@dimen/text_small_heading" />
+
+                    <TextView
+                        android:id="@+id/product_original_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/lorem_ipsum_short"
+                        android:textColor="@color/primary_color"
+                        android:textSize="@dimen/text_sub_body" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/custom_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.01" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/brand"
+                            android:textColor="@color/lightdark"
+                            android:textSize="@dimen/text_sub_body" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:padding="@dimen/main_margin"
+                            android:text="@string/brand"
+                            android:textAlignment="center"
+                            android:textColor="@color/primary_color"
+                            android:textSize="@dimen/text_small_heading"
+                            app:chipBackgroundColor="@color/white"
+                            app:chipStrokeWidth="0.1dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/main_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="@string/category"
+                            android:textColor="@color/lightdark"
+                            android:textSize="@dimen/text_sub_body" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:padding="@dimen/main_margin"
+                            android:text="@string/category"
+                            android:textAlignment="center"
+                            android:textColor="@color/primary_color"
+                            android:textSize="@dimen/text_small_heading"
+                            app:chipBackgroundColor="@color/white"
+                            app:chipStrokeWidth="0.1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/description"
+                    android:textColor="@color/lightdark"
+                    android:textSize="@dimen/text_sub_body" />
+
+                <TextView
+                    android:id="@+id/product_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/secondary_margin"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/lorem_ipsum_long"
+                    android:textColor="@color/primary_color"
+                    android:textSize="@dimen/text_body" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

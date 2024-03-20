@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:contentDescription="@string/lorem_ipsum_short"
+            android:src="@drawable/addtocart" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginBottom="@dimen/main_margin"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/onboarding_title_3"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_medium_heading" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/onboarding_subtitle_3"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_body" />
+    </LinearLayout>
+</RelativeLayout>

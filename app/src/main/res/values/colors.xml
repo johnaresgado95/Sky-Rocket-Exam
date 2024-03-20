@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom Color -->
+    <color name="milkwhite">#F5F5F5</color>
+    <color name="dark">#505050</color>
+    <color name="lightdark">#919191</color>
+    <color name="grey">#BDBDC6</color>
+    <color name="lightgrey">#E3E3E1</color>
+
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="activity_color">#f4f4f4</color>
+
+    <color name="primary_color">#393e41</color>
+    <color name="secondary_color">#f6f7eb</color>
+    <color name="cta_color">#ed6a5a</color>
+</resources>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Simple Ecommerce App</string>
+
+    <string name="lorem_ipsum_short">Lorem Ipsum</string>
+    <string name="sale">Sale</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ex eget turpis sagittis tincidunt. Duis hendrerit fermentum justo id suscipit. Cras varius dictum ante, eu eleifend risus condimentum nec. Nunc id massa vel nisl interdum vehicula. Vivamus placerat neque nec justo cursus, id mollis velit volutpat. Integer ultrices, odio ut luctus suscipit, lacus nisi malesuada dolor, at condimentum magna est eu justo. Vestibulum ac magna id lorem fermentum ultricies. Nulla facilisi. In hac habitasse platea dictumst. Vivamus lacinia, nunc a faucibus pulvinar, lectus lectus malesuada mauris, ut eleifend dolor lorem et ante. Sed vehicula, nisi vitae ultricies cursus, velit orci tincidunt lectus, ut tristique magna velit et libero. Phasellus ut dui et leo vestibulum aliquam a nec arcu. Donec tincidunt libero eu felis dapibus, vel pharetra ante dapibus.</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hello">Hello,</string>
+    <string name="search_product">Search Product</string>
+    <string name="category">Category</string>
+    <string name="stocks">Stocks</string>
+    <string name="brand">Brand</string>
+    <string name="description">Description</string>
+    <string name="addtocart">Add to Cart</string>
+    <string name="page_is_not_available">Page is not yet available, we are trying out best to deliver it to you as soon as we can.</string>
+
+    <!-- Home Fragments-->
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="settings">Settings</string>
+
+    <!-- Hint -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Your Gateway to Seamless Shopping</string>
+    <string name="onboarding_subtitle_1">We are thrilled to have you join our community of savvy shoppers. Get ready to discover amazing deals, browse through a vast selection of products, and experience a seamless shopping journey like never before.</string>
+    <string name="onboarding_title_2">Find What You Love, Effortlessly</string>
+    <string name="onboarding_subtitle_2">Dive into a world of endless possibilities. Whether you are looking for the latest fashion trends, must-have gadgets, or home essentials, we got you covered. Explore our curated collections, personalized recommendations, and exclusive offers tailored just for you.</string>
+    <string name="onboarding_title_3">Shop with Confidence, Anytime, Anywhere</string>
+    <string name="onboarding_subtitle_3">Enjoy a hassle-free shopping experience with [App Name]. From secure payment options to fast delivery and easy returns, we thought of everything to make your shopping journey smooth and convenient. Shop with confidence, knowing that we are here to support you every step of the way.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

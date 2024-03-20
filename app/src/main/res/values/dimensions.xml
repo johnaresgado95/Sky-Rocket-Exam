@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_margin">20dp</dimen>
+    <dimen name="main_margin_2x">40dp</dimen>
+    <dimen name="secondary_margin">10dp</dimen>
+    <dimen name="main_image_margin">220dp</dimen>
+
+    <dimen name="main_radius">10dp</dimen>
+    <dimen name="radius_55">55dp</dimen>
+
+    <dimen name="text_heading">24sp</dimen>
+    <dimen name="text_medium_heading">20sp</dimen>
+    <dimen name="text_small_heading">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_sub_body">12sp</dimen>
+    <dimen name="text_fine_body">10sp</dimen>
+</resources>

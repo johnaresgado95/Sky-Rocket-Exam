@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Simple_Ecommerce" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/cta_color</item>
+        <item name="colorOnPrimary">@color/primary_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+    <style name="custom_ratingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+    <style name="Theme.Simple_Ecommerce" parent="Base.Theme.Simple_Ecommerce" />
+</resources>

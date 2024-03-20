@@ -1,0 +1,48 @@
+<!-- activity_onboarding.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:flow_verticalAlign="center">
+
+    <!-- ViewPager to display onboarding screens -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/main_margin"
+        android:layout_weight="1" />
+
+    <!-- Page indicator -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/indicatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/main_margin"
+        android:fontFamily="@font/poppins_regular"
+        android:padding="@dimen/main_margin"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small_heading"
+        app:chipBackgroundColor="@color/cta_color"
+        app:chipStrokeWidth="0dp" />
+
+
+</LinearLayout>

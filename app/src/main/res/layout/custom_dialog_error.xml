@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/building_code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Oops!"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="1dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Oops!"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/main_margin"
+            android:fontFamily="@font/poppins_regular"
+            android:padding="@dimen/main_margin"
+            android:text="@string/next"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small_heading"
+            app:chipBackgroundColor="@color/cta_color"
+            app:chipStrokeWidth="0dp" />
+    </LinearLayout>
+</LinearLayout>
