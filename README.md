@@ -23,6 +23,13 @@ This mini project has simple functionalities, but it applies the best code pract
 * products/{id}
 * products/search?q=
 
+## Tech Stack
+* Java Native
+* ViewModel
+* MVVM
+* Clean Architecture
+* Github
+
 ## Library
 * implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0" - For UI Toolbar scroll collapse
 * implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0' - To Refresh layout for RecyclerView
